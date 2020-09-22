@@ -1,0 +1,12 @@
+[webserver]
+<SERVER_NAME>
+
+<SERVER_NAME> ansible_host=<SERVER_IP>
+
+[webserver:vars]
+ansible_port=<SSH_PORT>
+ansible_connection=ssh
+ansible_user=<USER_NAME>
+ansible_private_key_file=~/.ssh/<PRIVATE_KEY_NAME>
+ansible_sudo_pass=<SUDO_PASSWORD>
+
